@@ -1,12 +1,8 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
-}
-
-input {
-  outline: none;
 }
 
 /* Header */
@@ -17,11 +13,11 @@ input {
   text-align: right;
 }
 
-.header .header__img {
+.header__img {
   width: 100%;
 }
 
-.header .header__link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
@@ -56,14 +52,8 @@ input {
   display: flex;
 }
 
-input#new-task {
+.new-task__input {
   width: 318px;
-}
-
-.task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
 }
 
 .list {
@@ -100,7 +90,11 @@ input#new-task {
   transform: rotateZ(0);
 }
 
-input[type="text"] {
+.input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
+  outline: none;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -113,12 +107,12 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.input:focus {
   color: #333;
 }
 
 /* Task list */
-li {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -131,14 +125,10 @@ li {
   margin: 0 10px;
 }
 
-li>label {
+.list__item>label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
-}
-
-li>input[type="text"] {
   width: 226px;
 }
 
@@ -149,16 +139,16 @@ li>input[type="text"] {
 }
 
 /* Edit Task */
-.list li input[type=text] {
+.list__item .input {
   display: none;
 }
 
-.list .list__item-edit input[type=text] {
+.list__item-edit .input {
   display: inline-block;
   width: 224px;
 }
 
-.list .list__item-edit label {
+.list__item-edit label {
   display: none;
 }
 
