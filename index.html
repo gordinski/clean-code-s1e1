@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Todo App</title>
@@ -25,21 +25,21 @@
     <section class="incomplete-tasks">
       <h3 class="incomplete-tasks__title title">Todo</h3>
       <ul class="incomplete-tasks__list list" id="incomplete-tasks">
-        <li class="incomplete-tasks__item">
-          <input type="checkbox">
+        <li class="list__item">
+          <input class="list__checkbox" type="checkbox">
           <label class="task">Pay Bills</label>
           <input class="task" type="text">
-          <button class="incomplete-tasks__button button-edit button">Edit</button>
-          <button class="incomplete-tasks__button button-delete button">
+          <button class="list__button button-edit button">Edit</button>
+          <button class="list__button button-delete button">
             <img class="button-delete__icon" src="./remove.svg" alt="">
           </button>
         </li>
-        <li class="editMode">
-          <input type="checkbox">
+        <li class="list__item list__item-edit">
+          <input class="list__checkbox" type="checkbox">
           <label class="task">Go Shopping</label>
           <input class="task" value="Go Shopping" type="text">
-          <button class="incomplete-tasks__button button-edit button">Save</button>
-          <button class="incomplete-tasks__button button-delete button">
+          <button class="list__button button-edit button">Save</button>
+          <button class="list__button button-delete button">
             <img class="button-delete__icon" src="./remove.svg" alt="">
           </button>
         </li>
@@ -49,12 +49,12 @@
     <section>
       <h3 class="title">Completed</h3>
       <ul class="completed-tasks__list list" id="completed-tasks">
-        <li>
-          <input type="checkbox" checked>
+        <li class="list__item">
+          <input class="list__checkbox" type="checkbox" checked>
           <label class="task">See the Doctor</label>
           <input class="task" type="text">
-          <button class="incomplete-tasks__button button-edit button">Edit</button>
-          <button class="completed-tasks__button button-delete button">
+          <button class="list__button button-edit button">Edit</button>
+          <button class="list__button button-delete button">
             <img class="button-delete__icon" src="./remove.svg" alt="">
           </button>
         </li>

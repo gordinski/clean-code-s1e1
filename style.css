@@ -90,13 +90,13 @@ input#new-task {
   color: #3a3A3a;
 }
 
-.button-delete .button-delete__icon {
+.button-delete__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-delete .button-delete__icon:hover {
+.button-delete__icon:hover {
   transform: rotateZ(0);
 }
 
@@ -127,7 +127,7 @@ li {
   align-items: center;
 }
 
-li>input[type="checkbox"] {
+.list__checkbox {
   margin: 0 10px;
 }
 
@@ -153,12 +153,12 @@ li>input[type="text"] {
   display: none;
 }
 
-.list li.editMode input[type=text] {
+.list .list__item-edit input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-.list li.editMode label {
+.list .list__item-edit label {
   display: none;
 }
 
